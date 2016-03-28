@@ -30,18 +30,18 @@ You should not add any other files to the repo when you are making your changes.
 *Write a function to these specifications:*
 
 1. Using the api that we used for the bonus question, write a function that will do the following:
-* Create a button with the text "Get Title"
-* When I click the button, it will make an ajax request to this url - http://www.mattbowytz.com/simple_api.json
-* You will need to use a query string named "data" and the value should be "quizData"
+  * Create a button with the text "Get Title"
+  * When I click the button, it will make an ajax request to this url - http://www.mattbowytz.com/simple_api.json
+  * You will need to use a query string named "data" and the value should be "quizData"
 
 2. Using the return data, complete the following:
-* When the button is clicked, the data from the request should display prominently on the page and the text of the button should say "Change It"
-* You will then need to add a new button that says "Keep It" (this button should not be in the dom when the page loads)
-* If I click on the "Keep It" button, you should set a cookie using js, so that when I refresh the page I can see what the last value was, and the original button should display, allowing me to complete the operation again, and set a new cookie if I want to keep the new value and so on
-* *Note:* setting cookies with regular js is pretty easy, but cannot be done easily with jQuery on it's own
+  * When the button is clicked, the data from the request should display prominently on the page and the text of the button should say "Change It"
+  * You will then need to add a new button that says "Keep It" (this button should not be in the dom when the page loads)
+  * If I click on the "Keep It" button, you should set a cookie using js, so that when I refresh the page I can see what the last value was, and the original button should display, allowing me to complete the operation again, and set a new cookie if I want to keep the new value and so on
+  * *Note:* setting cookies with regular js is pretty easy, but cannot be done easily with jQuery on it's own
 
 3. Apply a basic layer of styling to the page.
-* As always, I will not be looking for the next great internet masterpiece, but I do not want to see any default styles whatsoever.
+  * As always, I will not be looking for the next great internet masterpiece, but I do not want to see any default styles whatsoever.
 
 ### 25 Points
 
