@@ -30,6 +30,7 @@ You should not add any other files to the repo when you are making your changes.
 *Write a function to these specifications:*
 
 ### All work for part two will be done in the files you worked with for part one
+#### Put your 
 
 1. Using the api that we used for the bonus question, write a function that will do the following:
   * Create a button with the text "Get Title"
@@ -63,9 +64,9 @@ You should not add any other files to the repo when you are making your changes.
 7. Next run `git remote add matt https://github.com/matty-digital/quiz2.git` - this will add my repo as a remote for you to push your changes to
 8. Now, create a new branch to do your changes on. By default, you'll be on a branch called "master". Run `git checkout -b quiz2-{last name}` to create and go to the branch you will do your work on. You named this branch in the above command.
 9. When you have made your changes, run `git commit -am "meaningful commit message"` this will stage your changes and get them ready to push (please create your own commit message, I don't want to see the example text)
-9. Next run `git push matt quiz2-{last name}` - this will push your local changes on your branch to my repo
-10. Back in your browser, go to your github page. Now that you've pushed, you should see a link above where you found the HTTPS link for your repo and click it to make a pull request.
-11. On the pull request page, write a comment in the large field with your information and click `create pull request`
+10. Next run `git push origin quiz2-{last name}` - this will push your local changes on your branch to github and you can then make a pull request
+11. Back in your browser, go to your github page. Now that you've pushed, you should see a link above where you found the HTTPS link for your repo and click it to make a pull request.
+12. On the pull request page, write a comment in the large field with your information and click `create pull request`
 
 After you create the pull request, I will be able to see it in comparison to the code that was on the repo that you forked.
 
