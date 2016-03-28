@@ -45,6 +45,8 @@ You should not add any other files to the repo when you are making your changes.
 
 ### 25 Points
 
+## TOTAL - 50 Points
+
 # Submission/Git notes:
 
 *Some tips for using git*
