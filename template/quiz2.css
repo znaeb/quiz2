@@ -32,3 +32,25 @@ content form {
 	background: transparent;
 	magrin-bottom: 15px;
 }
+
+.content div {
+	margin-bottom: 25px;
+	padding: 10px;
+	width: 100%;
+}
+
+.click {
+	background: #ADD8E6;
+}
+
+.mouse-over {
+	background: #CF6E0E;
+}
+
+.submit {
+	background: #43AC6A;
+}
+
+.timeout {
+	background: #CCCCCC;
+}
