@@ -61,6 +61,8 @@
 	});
 	$secret.click('click', function() {
 		alert($nerdStuff.html()+"not saved");
+		document.cookie=$nerdStuff.html();
+
 
 	});
 
