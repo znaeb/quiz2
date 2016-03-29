@@ -1,39 +1,62 @@
-(function($){
+(function(){
 	// This is where you will write your function for the programming challenge
 	// Do not commit console.log statements
 	// Use ajax to reach the api endpoint
 	// Whether or not you use jQuery, you still have to fix the jQuery errors. Removing jQuery is not fixing the problem.
 
-	$mouseover = $('.mouseover');
-	$click     = $('.clikc');
-	$sub       = $('.submit');
+
+	//I was in class
+
+	$mouseover = $(".mouse-over");
+	$click     = $(".click");
+	$submit       = $(".submit");
+	$timeout       = $(".timeout");
+	$title =$(".title");
 
 	$mouseover.on('mouseover', function() {
-		$this = $(this);
+		//$mouseover.mouseover (function() {
+		//$this = $(this);
 		$(this).html('Scrooge McDuck!');
-		$(this).height($(this).height() + 50);
+		//$(this).height($(this).height() + 50);
+		//$(this).html($this);
+	});
+	$mouseover.on('mouseout', function() {
+		//$mouseover.mouseover (function() {
+		//$this = $(this);
+		$(this).html("<span>mouse over event</span>	<p>Who's the richest person you know? (mouse over to find out)</p>");
+		//$(this).height($(this).height() - 50);
+		//$(this).height($(this).height() + 50);
+		//$(this).html($this);
 	});
 
+
 	$click.click('click', function() {
-		$this.hmtl('Peace Out!')
-		$(this).fadeout(1500);
+		$(this).html('Peace Out!');
+		$(this).fadeOut(1500);
 		return false;
 	});
 
 	$submit.on('submit', function(e) {
+		//alert($(this).);
 		e.preventDefault();
 		if ($(this).find('input[type="text"]').val() !== '') {
-			$(this).find('input').foreach(function() {
-				$(this).fadeout('slow');
+			//alert("poo");
+			$(this).find('input').each(function() {
+				$(this).fadeOut('slow');
 			});
-			$(this).appendwith('<h2>Congratulations! You've entered some text!</h2>');
+			$(this).html("<h2>Congratulations! You've entered some text!</h2>");//.appendWith();
 		}
 	});
+	//$title.on('button',$.getJSON( "http://www.mattbowytz.com/simple_api.json?data=all", function( data ) {
+	//	alert(data.data.quizData);
+	//}));
 
-	$(document).on(ready, function() {
-		setTimeout({
+
+	$(document).on('ready', function() {
+		//setTimeout({
 			$timeout.fadeIn('slow');
-		}, 1000);
+
+		//})
 	});
 
 })(jQuery);
