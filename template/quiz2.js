@@ -58,12 +58,15 @@
 			$title.val('Change It');
 			$secret.show();
 		})
-	})();
+	});
+	$secret.click('click', function() {
+		alert("p");
 
+	});
 
 	$(document).on('ready', function() {
 		//setTimeout({
-			$timeout.fadeIn('slow');
+			$timeout.fadeIn(1000);
 
 		//})
 	});
