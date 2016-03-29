@@ -58,5 +58,11 @@ html body {
 }
 .timeout{
 	background: #cc0c28;
-	visibility: hidden;
+	display: none;
+}
+.nerd-stuff{
+	background: #9e99cc;
+	/*
+	display: none;
+	*/
 }

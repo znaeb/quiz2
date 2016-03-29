@@ -12,6 +12,7 @@
 	$submit       = $(".submit");
 	$timeout       = $(".timeout");
 	$title =$(".title");
+	$nerdStuff =$(".nerd-stuff");
 
 	$mouseover.on('mouseover', function() {
 		//$mouseover.mouseover (function() {
@@ -47,9 +48,14 @@
 			$(this).html("<h2>Congratulations! You've entered some text!</h2>");//.appendWith();
 		}
 	});
-	//$title.on('button',$.getJSON( "http://www.mattbowytz.com/simple_api.json?data=all", function( data ) {
-	//	alert(data.data.quizData);
-	//}));
+	$title.on('click', function() {
+		$.getJSON( "http://www.mattbowytz.com/simple_api.json?data=quizData", function( data ) {
+			$random=Math.floor((Math.random() * data.data.length));
+			$nerdyStuff=data.data[$random];
+			$nerdStuff.html($nerdyStuff);
+			$(this).val("Change it");
+		})
+	})();
 
 
 	$(document).on('ready', function() {
