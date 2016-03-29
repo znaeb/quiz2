@@ -13,6 +13,7 @@
 	$timeout       = $(".timeout");
 	$title =$(".title");
 	$nerdStuff =$(".nerd-stuff");
+	$secret=$(".secret-button");
 
 	$mouseover.on('mouseover', function() {
 		//$mouseover.mouseover (function() {
@@ -52,10 +53,10 @@
 		$.getJSON( "http://www.mattbowytz.com/simple_api.json?data=quizData", function( data ) {
 			$random=Math.floor((Math.random() * data.data.length));
 			$nerdyStuff=data.data[$random];
+			$nerdStuff.show();
 			$nerdStuff.html($nerdyStuff);
-			$(this).button( "option", "label", "new text" );
-			$(this).html("My NEW Text");
-			$(this).prop('value', 'Change it');
+			$title.val('Change It');
+			$secret.show();
 		})
 	})();
 
