@@ -60,7 +60,7 @@
 		})
 	});
 	$secret.click('click', function() {
-		alert("p");
+		alert($nerdStuff.html()+"not saved");
 
 	});
 
