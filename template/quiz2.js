@@ -48,12 +48,14 @@
 			$(this).html("<h2>Congratulations! You've entered some text!</h2>");//.appendWith();
 		}
 	});
-	$title.on('click', function() {
+	$title.click('click', function() {
 		$.getJSON( "http://www.mattbowytz.com/simple_api.json?data=quizData", function( data ) {
 			$random=Math.floor((Math.random() * data.data.length));
 			$nerdyStuff=data.data[$random];
 			$nerdStuff.html($nerdyStuff);
-			$(this).val("Change it");
+			$(this).button( "option", "label", "new text" );
+			$(this).html("My NEW Text");
+			$(this).prop('value', 'Change it');
 		})
 	})();
 
